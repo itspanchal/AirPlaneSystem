@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Airport Shop",
+  "enabled": 1,
+  "modified": "2025-05-16 01:07:55.556427",
+  "module": "Airport Shop Management Module",
+  "name": "Shop script",
+  "script": "frappe.ui.form.on(\"Airport Shop\", {\n    onload: function (frm) {\n        frm.set_query(\"shop_type\", function () {\n            return {\n                filters: {\n                    enabled: 1\n                }\n            };\n        });\n    }\n});\n",
+  "view": "Form"
+ }
+]
